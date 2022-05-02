@@ -1,0 +1,103 @@
+/* body {
+    background-image: url("../Imagenes/ba1.jpg");
+}
+ */
+.transparente{
+    background-color: transparent;
+}
+* {
+    font-size: 14px;
+}
+
+.alto {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.botonuno {
+    color: rgb(121, 117, 117);
+    background-color: transparent;
+    border-color: rgb(121, 117, 117);
+}
+
+.card {
+    width: 20rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.card a {
+    padding: .2rem .4rem .2rem .4rem;
+    font-size: .7rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;    
+}
+
+.fondo {
+    background-image: url('ba1.jpg');
+    height: 100rem;
+    width: 100rem;
+}
+
+/* .imagen {
+    height: 50rem;
+    width: 80rem;
+} */
+
+.textTarjeta {
+    position: absolute;
+    text-align: right;
+    top:20rem;
+    right: 10rem;
+    bottom: 0;
+    left: 70;
+    padding: 1rem;
+    border-radius: calc(25rem - 100px);
+}
+
+.filtro {
+    filter: contrast(80%);
+    filter: drop-shadow(50%);
+}
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+}
+
+.estrecho {
+    width: 312px;
+    text-align: center;
+}
+
+.estrecho2 {
+    width: 630px;
+    text-align: center;
+}
+
+.aclaracion {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-left: 317px;
+}
+
+.boton {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.blanco {
+    color: #fff;
+}
