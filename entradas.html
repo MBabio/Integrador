@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/integrador.css">
+</head>
+
+<body>
+    <!-- Empezamos haciendo pruebas -->
+
+        <!-- Prueba para ocultar DIV -->
+<!--         <div>
+            <button id="botonocultar" class="btn btn-primary" onclick="ocultar()">Ocultar</button>
+        </div>
+        <div id="nuevoDiv" style="display: block">
+            <h2>SolHOLAAAAAAAAAAAAAAAAAAAAAAA
+        </div>
+ -->
+    <!-- Hasta acá las pruebas -->
+
+
+
+
+    <!-- Barra superior -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid d-flex">
+                <div>
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Conviertete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:darkgreen" href="#" tabindex="-1"
+                                    aria-disabled="true">Comprar Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Cuadros de selección -->
+
+    <div class="d-flex justify-content-center my-4 mb-1">
+
+        <div class="card border-primary mx-1 tarjeta" style="max-width: 18rem;">
+            <div class="card-body mb-3 my-2">
+                <h5 class="card-title mb-3 negritaCard">Estudiante</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title mb-3 negritaCard">80%</h5>
+                <p class="card-text grisCard">* presentar documentación</p>
+            </div>
+        </div>
+
+        <div class="card border-success mx-1 tarjeta" style="max-width: 18rem;">
+            <div class="card-body mb-3 my-2">
+                <h5 class="card-title mb-3 negritaCard">Trainee</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title negritaCard mb-3">50%</h5>
+                <p class="card-text grisCard">* presentar documentación</p>
+            </div>
+        </div>
+
+        <div class="card border-warning mx-1 tarjeta" style="max-width: 18rem;">
+            <div class="card-body mb-3 my-2">
+                <h5 class="card-title mb-3 negritaCard">Junior</h5>
+                <p class="card-text mb-3">Tienen un descuento</p>
+                <h5 class="card-title mb-3 negritaCard"><b>15%</b></h5>
+                <p class="card-text grisCard">* presentar documentación</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Luego de las tarjetas -->
+
+    <div>
+        <p style="margin-bottom: 0px;">VENTA</p>
+        <h1>VALOR DE TICKET $200</h1>
+    </div>
+
+    <!-- Formulario -->
+
+    <div class="container my-4 anchoTotal">
+        <form action="#" method="post">
+            <div class="row mt-2">
+                <div class="col-md">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="col-md">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control">
+                </div>
+            </div>
+
+            <div class="row mt-1" style="padding: 0.75rem;">
+                <input type="text" name="email" id="email" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <label id="cant" class="form-label mb-1">Cantidad</label>
+                    <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" class="form-control">
+                </div>
+                <div class="col-md">
+                    <label for="" class="form-label mb-1">Categoría</label>
+                        <select id="categoria" class="form-select" aria-label="Default select example">
+                            <option value="1" selected>Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                </div>
+            </div>
+            <!-- Etiqueta de información del total a pagar -->
+                    
+            <div class="row my-4 mx-0 mb-2">            
+                <div class="alert alert-info" role="alert">
+                    <p class="textoPagar">Total a Pagar: $ <span id="calculo"></span></p>
+                </div>
+            </div>
+
+            <div class="row my-0">
+                <div class="col-6">
+                    <div class="d-grid">
+                        <input type="reset" class="btn btn-primary" value="Borrar">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="d-grid">
+                        <input type="button" class="btn btn-primary" value="Resumen" onclick="calcularTotal()">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        
+    </div>
+
+
+    
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

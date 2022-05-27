@@ -101,3 +101,35 @@ p {
 .blanco {
     color: #fff;
 }
+
+.negritaCard {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+
+.grisCard {
+    text-align: center;
+    color:darkgray;
+}
+.tarjeta {
+    border-radius: 0em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    margin-top: 0em;
+}
+
+.anchoTotal {
+    max-width: 57rem;
+}
+
+.textoPagar {
+    padding: 0%;
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
